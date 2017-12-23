@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Decision} from './decision/decision.model';
 
 @Component({
   selector: 'app-root',
