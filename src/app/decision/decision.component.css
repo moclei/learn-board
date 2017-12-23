@@ -1,0 +1,12 @@
+
+.decision-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.decision-container > * {
+  width: 100%;
+}
+.decision-card {
+  width: 400px;
+}
