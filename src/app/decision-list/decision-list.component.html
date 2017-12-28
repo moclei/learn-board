@@ -1,8 +1,5 @@
-
-<div class="containerX">
-  <div  fxLayout="row" fxLayoutWrap="wrap" fxLayoutAlign="start start" fxLayoutGap="15px" fxFlex>
+<div fxLayout="row" fxLayoutWrap="wrap"  fxLayoutAlign="center end" >
     <ng-container *ngFor ="let decision of decisions">
       <app-decision [decision]="decision"></app-decision>
     </ng-container>
-  </div>
 </div>

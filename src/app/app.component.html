@@ -30,13 +30,15 @@
 
 
     <mat-sidenav-content>
-      <span class="example-spacer"></span>
-      <div fxFlexFill fxLayoutAlign="center">
-        <app-decision-input></app-decision-input>
+      <div fxLayout='column'>
+        <div fxLayoutAlign="center" fxFlexOffset="2">
+          <app-decision-input></app-decision-input>
+        </div>
       </div>
-      <div fxFlexFill fxLayoutAlign="space-around center">
-        <app-decision-list></app-decision-list>
+      <div fxLayout="column">
+        <div fxFlex fxFlexOffset="2"></div>
       </div>
+      <app-decision-list></app-decision-list>
     </mat-sidenav-content>
   </mat-sidenav-container>
 </div>
