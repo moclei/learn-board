@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Decision} from '../decision/decision.model';
+import {DecisionService} from "../decision/decision.service";
 
 @Component({
   selector: 'app-decision-list',
@@ -8,14 +9,11 @@ import {Decision} from '../decision/decision.model';
 })
 export class DecisionListComponent implements OnInit {
 
-  decisions: Decision[] = [
-    new Decision('Marc', 'Go to Fallon and Byrne to buy Christmas shopping', 'Christmas Shopping'),
-    new Decision('Marc', 'Buy 2018 Tickets to Dublin now to save money, could be cheaper', 'Ireland Flights'),
-    new Decision('Marc', 'Buy curtains for 30 apartments instead of installing cabinets', 'Curtains')
-  ]
-  constructor() { }
+  decisions: Decision[];
+  constructor(private decisionService: DecisionService) { }
 
   ngOnInit() {
+    this.decisions = this.decisionService.getDecisions();
   }
 
 }

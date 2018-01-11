@@ -4,10 +4,29 @@
   flex-direction: column;
 }
 
+mat-form-field.mat-form-field {
+  font-size: 16px;
+  width: 100%;
+}
+
 .decision-container > * {
   width: 100%;
 }
+
 .decision-card {
   width: 400px;
   margin:10px;
 }
+
+.decision-card:hover {
+  cursor:default;
+}
+
+p {
+  font-size: x-large;
+}
+
+mat-card-title {
+  font-weight: bold;
+}
+

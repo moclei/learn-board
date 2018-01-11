@@ -1,0 +1,23 @@
+<div>
+  <mat-form-field>
+    <input matInput [(ngModel)]="data.title" placeholder="Title">
+  </mat-form-field>
+
+  <div class="decision-edit-container">
+    <mat-form-field>
+      <textarea matInput [(ngModel)]="data.content" placeholder="Decision" required></textarea>
+    </mat-form-field>
+  </div>
+  <mat-form-field>
+    <textarea matInput [(ngModel)]="data.result"  placeholder="Result"></textarea>
+  </mat-form-field>
+
+
+  <div fxLayout="row">
+    <button mat-button>
+      <mat-icon>more_vert</mat-icon>
+    </button>
+    <div fxFlex></div>
+    <button mat-button (click)="onNoClick()">DONE</button>
+  </div>
+</div>
